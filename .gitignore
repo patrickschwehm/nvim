@@ -1,0 +1,5 @@
+_init.vim
+/plugin
+/autoload
+/vim-plug
+

@@ -1,0 +1,21 @@
+local set = vim.opt
+
+set.errorbells = false
+set.visualbell = true
+set.tabstop = 2
+set.softtabstop = 2
+set.shiftwidth = 2
+set.expandtab = true
+set.smartindent = true
+set.number = true
+set.wrap = false
+set.smartcase = true
+set.swapfile = false
+set.writebackup = false
+set.incsearch = true
+set.relativenumber = true
+set.backspace = 'indent,eol,start'
+set.scrolloff = 8
+set.fileencoding = 'utf-8'
+set.termguicolors = true
+set.signcolumn = 'yes'

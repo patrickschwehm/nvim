@@ -20,6 +20,6 @@ require'packer'.startup(function()
   use 'jiangmiao/auto-pairs'
   use 'leafOfTree/vim-matchtag'
   use 'Yggdroot/indentLine'
-  use 'f-person/git-blame.nvim'
   use 'xiyaowong/nvim-transparent'
+  -- use 'f-person/git-blame.nvim'
 end)

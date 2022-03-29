@@ -21,4 +21,5 @@ require'packer'.startup(function()
   use 'leafOfTree/vim-matchtag'
   use 'Yggdroot/indentLine'
   use 'f-person/git-blame.nvim'
+  use 'xiyaowong/nvim-transparent'
 end)

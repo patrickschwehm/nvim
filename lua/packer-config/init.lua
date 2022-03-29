@@ -19,4 +19,6 @@ require'packer'.startup(function()
   use 'ellisonleao/gruvbox.nvim'
   use 'jiangmiao/auto-pairs'
   use 'leafOfTree/vim-matchtag'
+  use 'Yggdroot/indentLine'
+  use 'f-person/git-blame.nvim'
 end)

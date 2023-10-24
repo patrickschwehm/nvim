@@ -6,7 +6,8 @@ lsp.ensure_installed({
   'tsserver',
   'html',
   'cssls',
-  'eslint'
+  'eslint',
+  'pylsp'
 })
 
 -- Fix Undefined global 'vim'

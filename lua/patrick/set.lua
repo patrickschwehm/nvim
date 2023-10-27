@@ -21,8 +21,7 @@ vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.backspace = 'indent,eol,start'
-vim.opt.fileencoding = 'utf-8'
+vim.opt.backspace = "indent,eol,start"
+vim.opt.fileencoding = "utf-8"
 vim.opt.modifiable = true
-
-
+vim.opt.mouse = "a"

@@ -60,6 +60,12 @@ return require("packer").startup(function(use)
 	use("jayp0521/mason-null-ls.nvim")
 
 	use("christoomey/vim-tmux-navigator")
-	use("tanvirtin/monokai.nvim")
-	use("Roboron3042/Cyberpunk-Neon")
+	use("preservim/nerdtree")
+	use("echasnovski/mini.nvim")
+
+	-- Automatically set up your configuration after cloning packer.nvim
+	-- Put this at the end after all plugins
+	if packer_bootstrap then
+		require("packer").sync()
+	end
 end)

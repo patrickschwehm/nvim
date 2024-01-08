@@ -25,3 +25,4 @@ vim.opt.backspace = "indent,eol,start"
 vim.opt.fileencoding = "utf-8"
 vim.opt.modifiable = true
 vim.opt.mouse = "a"
+vim.opt.conceallevel = 1

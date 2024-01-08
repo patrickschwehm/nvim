@@ -3,9 +3,16 @@ vim.cmd([[packadd packer.nvim]])
 return require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
-	use("theprimeagen/harpoon")
+	use("nvim-lua/plenary.nvim") -- don't forget to add this one if you don't have it yet!
+	use({
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+
 	-- use("nvim-treesitter/nvim-treesitter", { run = "TSUpdate" })
 	use("ellisonleao/gruvbox.nvim")
+	use("craftzdog/solarized-osaka.nvim")
 	use({
 		"svrana/neosolarized.nvim",
 		requires = { "tjdevries/colorbuddy.nvim" },
@@ -62,6 +69,8 @@ return require("packer").startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 	use("preservim/nerdtree")
 	use("echasnovski/mini.nvim")
+	use("f-person/git-blame.nvim")
+	use("epwalsh/obsidian.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

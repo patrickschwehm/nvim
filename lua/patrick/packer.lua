@@ -71,7 +71,12 @@ return require("packer").startup(function(use)
 	use("echasnovski/mini.nvim")
 	use("f-person/git-blame.nvim")
 	use("epwalsh/obsidian.nvim")
-
+	use({
+		"anuvyklack/pretty-fold.nvim",
+		config = function()
+			require("pretty-fold").setup()
+		end,
+	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

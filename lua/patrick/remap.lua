@@ -23,3 +23,5 @@ vim.keymap.set("n", "<leader>k", "<C-w>k", opts)
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<C-n>", ":NERDTreeToggle<CR>")
+
+vim.keymap.set("n", "<leader>t", ":lua search_by_filetype()<CR>", { noremap = true, silent = true })

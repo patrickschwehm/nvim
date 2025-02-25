@@ -20,7 +20,6 @@ vim.keymap.set("n", "<leader>b", builtin.buffers, {})
 vim.keymap.set("n", "<leader>ps", builtin.oldfiles, {})
 vim.keymap.set("n", "<leader>sh", builtin.search_history, {})
 vim.keymap.set("n", "<leader>r", builtin.resume, {})
--- vim.api.nvim_set_keymap("n", "<leader>b", ":lua require('config/telescope').my_buffer()<cr>", { noremap = true })
 
 local M = {}
 

@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["cyberdream.nvim"] = {
-    loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
-    url = "https://github.com/scottmckendry/cyberdream.nvim"
-  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -194,11 +189,6 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/mini.surround",
     url = "https://github.com/echasnovski/mini.surround"
   },
-  neovim = {
-    loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/neovim",
-    url = "https://github.com/rose-pine/neovim"
-  },
   nerdtree = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/nerdtree",
@@ -265,11 +255,6 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/scratch.vim",
     url = "https://github.com/mtth/scratch.vim"
   },
-  ["solarized-osaka.nvim"] = {
-    loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -295,11 +280,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
-  ["which-key.nvim"] = {
-    loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/which-key.nvim",
-    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

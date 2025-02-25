@@ -7,6 +7,11 @@ require("telescope").setup({
 		-- other settings
 		file_ignore_patterns = { "node_modules" },
 	},
+  pickers = {
+    find_files = {
+      hidden = true
+    }
+  }
 })
 
 vim.keymap.set("n", "<leader>f", builtin.find_files, {})
@@ -14,7 +19,8 @@ vim.keymap.set("n", "<leader>F", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>b", builtin.buffers, {})
 vim.keymap.set("n", "<leader>ps", builtin.oldfiles, {})
 vim.keymap.set("n", "<leader>sh", builtin.search_history, {})
-vim.api.nvim_set_keymap("n", "<leader>b", ":lua require('config/telescope').my_buffer()<cr>", { noremap = true })
+vim.keymap.set("n", "<leader>r", builtin.resume, {})
+-- vim.api.nvim_set_keymap("n", "<leader>b", ":lua require('config/telescope').my_buffer()<cr>", { noremap = true })
 
 local M = {}
 

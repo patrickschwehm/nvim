@@ -26,3 +26,8 @@ vim.keymap.set("n", "<C-n>", ":NERDTreeToggle<CR>")
 
 vim.keymap.set("n", "<leader>t", ":lua search_by_filetype()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>=", ":lua Equalize_vertical_splits()<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>n", ":nohls<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })

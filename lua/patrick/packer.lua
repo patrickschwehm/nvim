@@ -3,7 +3,6 @@ vim.cmd([[packadd packer.nvim]])
 return require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
-	use("nvim-lua/plenary.nvim") -- don't forget to add this one if you don't have it yet!
 	use({
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
@@ -12,13 +11,8 @@ return require("packer").startup(function(use)
 
 	-- use("nvim-treesitter/nvim-treesitter", { run = "TSUpdate" })
 	use("ellisonleao/gruvbox.nvim")
-	use({
-		"svrana/neosolarized.nvim",
-		requires = { "tjdevries/colorbuddy.nvim" },
-	})
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
-	use("jiangmiao/auto-pairs")
 	use("terrortylor/nvim-comment")
 	use("lewis6991/gitsigns.nvim")
 	use("windwp/nvim-autopairs")
@@ -36,7 +30,6 @@ return require("packer").startup(function(use)
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.3",
-		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use({
@@ -75,6 +68,23 @@ return require("packer").startup(function(use)
 			require("pretty-fold").setup()
 		end,
 	})
+	use("mtth/scratch.vim")
+	use({
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+	use("echasnovski/mini.surround")
+	use({
+		"folke/noice.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+			{ "rcarriga/nvim-notify" },
+		},
+	})
+	use("APZelos/blamer.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

@@ -79,10 +79,15 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
+  MatchTag = {
     loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/MatchTag",
+    url = "https://github.com/gregsexton/MatchTag"
+  },
+  ["blamer.nvim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/blamer.nvim",
+    url = "https://github.com/APZelos/blamer.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -109,10 +114,10 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["colorbuddy.nvim"] = {
+  ["cyberdream.nvim"] = {
     loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
+    url = "https://github.com/scottmckendry/cyberdream.nvim"
   },
   ["emmet-vim"] = {
     loaded = true,
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -179,15 +189,30 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
   },
-  ["neosolarized.nvim"] = {
+  ["mini.surround"] = {
     loaded = true,
-    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/mini.surround",
+    url = "https://github.com/echasnovski/mini.surround"
+  },
+  neovim = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   nerdtree = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -214,6 +239,11 @@ _G.packer_plugins = {
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -229,6 +259,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/pretty-fold.nvim",
     url = "https://github.com/anuvyklack/pretty-fold.nvim"
+  },
+  ["scratch.vim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/scratch.vim",
+    url = "https://github.com/mtth/scratch.vim"
   },
   ["solarized-osaka.nvim"] = {
     loaded = true,
@@ -260,6 +295,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/patrick.schwehn/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

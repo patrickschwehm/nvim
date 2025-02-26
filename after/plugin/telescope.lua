@@ -4,8 +4,8 @@ local action_state = require("telescope.actions.state")
 
 require("telescope").setup({
 	defaults = {
-		-- other settings
-		file_ignore_patterns = { "node_modules" },
+    -- ignore folders
+		file_ignore_patterns = { "node_modules", ".git" },
 	},
   pickers = {
     find_files = {
@@ -25,11 +25,6 @@ local M = {}
 
 function M.buffers(opts)
 	opts = opts or {}
-	-- opts.previewer = false
-	-- opts.layout_strategy = "horizontal"
-	-- opts.layout_config = {
-	-- 	horizontal = { width = 0.8, height = 0.5 },
-	-- }
 
 	opts.attach_mappings = function(prompt_bufnr, map)
 		local delete_buf = function()

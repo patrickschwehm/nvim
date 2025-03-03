@@ -9,10 +9,8 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-	-- use("nvim-treesitter/nvim-treesitter", { run = "TSUpdate" })
 	use("ellisonleao/gruvbox.nvim")
 	use("mbbill/undotree")
-	use("tpope/vim-fugitive")
 	use("terrortylor/nvim-comment")
 	use("lewis6991/gitsigns.nvim")
 	use("windwp/nvim-autopairs")
@@ -27,11 +25,13 @@ return require("packer").startup(function(use)
 			require("toggleterm").setup()
 		end,
 	})
-	use({
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.3",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
+  use {
+  "ibhagwan/fzf-lua",
+  requires = { "nvim-tree/nvim-web-devicons" }, -- Optional for icons
+  config = function()
+    require("fzf-lua").setup({})
+  end
+}
 	use({
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v1.x",
@@ -61,7 +61,6 @@ return require("packer").startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 	use("preservim/nerdtree")
 	use("echasnovski/mini.nvim")
-	use("f-person/git-blame.nvim")
 	use({
 		"anuvyklack/pretty-fold.nvim",
 		config = function()
@@ -85,6 +84,8 @@ return require("packer").startup(function(use)
 		},
 	})
 	use("APZelos/blamer.nvim")
+	use("rlane/pounce.nvim")
+  use("ya2s/nvim-cursorline")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

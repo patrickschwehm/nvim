@@ -31,3 +31,13 @@ vim.keymap.set("n", "<leader>n", ":nohls<CR>", { noremap = true, silent = true }
 vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
+
+vim.keymap.set("n", "<leader>p", "<cmd>Pounce<CR>", { desc = "Pounce" })
+
+-- fzf-lua
+vim.keymap.set("n", "<leader>f", require("fzf-lua").files, {desc = "fzf-lua"})
+vim.keymap.set("n", "<leader>F", require("fzf-lua").live_grep, {desc = "fzf-lua live grep"})
+vim.keymap.set("n", "<leader>r", require("fzf-lua").resume, {desc = "fzf-lua resume"})
+vim.keymap.set("n", "<leader>b", require("fzf-lua").buffers, {desc = "fzf-lua buffers"})
+vim.keymap.set("n", "<leader>gs", require("fzf-lua").git_status, {desc = "fzf-lua git status"})
+
